@@ -2,14 +2,17 @@
 
 Note that the code stub provided reads from STDIN and passes arguments to the is_leap function. It is only necessary to complete the is_leap function."""
 def is_leap(year):
-    if year%400==0: 
-        print(True)
-    elif year%100==0:
-        print(True)
-    elif year%4==0:
-        print(False)
+    if year % 400 == 0:
+        return True
+    elif year % 100 == 0:
+        return False
+    elif year % 4 == 0:
+        return True
     else:
         return False
 
 year = int(input())
 print(is_leap(year))
+
+year = int(input())
+print(is_leap(year))d
